@@ -108,38 +108,40 @@
             color: #6c757d;
         }
 
-        .social-box {
-            border: 2px solid #4a87e0;
-            padding: 1rem;
-            border-radius: 8px;
-            margin-top: 1.5rem;
-            background-color: #f8f9fb;
-            color: #2c375b;
-        }
+.social-box {
+    border: none;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #f8f9fb, #eef1f5);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    margin-top: 2rem;
+}
 
-            .social-box h6 {
-                font-weight: 600;
-                font-size: 1.1rem;
-                margin-bottom: 1rem;
-                color: #2c375b;
-            }
+.social-box h6 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c375b;
+    margin-bottom: 1rem;
+}
 
-        .social-icons {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-        }
+.social-icons-row {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
 
-            .social-icons a {
-                font-size: 2rem;
-                color: #4a87e0;
-                transition: color 0.3s ease;
-            }
+.social-icons-row a {
+    font-size: 1.6rem;
+    color: #4a87e0;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
 
-                .social-icons a:hover {
-                    color: #2c375b;
-                }
+.social-icons-row a:hover {
+    color: #2c375b;
+    transform: scale(1.2);
+}
+
         
                 .vcard-bubble {
                     position: fixed;
@@ -253,15 +255,21 @@
                 <a href="https://www.s-teamformations.fr/" target="_blank">Site Web</a>
             </div>
 
-            <div class="social-box">
-                <h6>Rejoignez-nous</h6>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/people/S-Team-Formations/61566949414638/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/steam_formations_officiel/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.s-teamformations.fr/" target="_blank" title="Site Web"><i class="fas fa-globe"></i></a>
-                </div>
-            </div>
-        </div>
+<div class="social-box">
+  <h6>Suivez-nous sur les réseaux</h6>
+  <div class="social-icons-row">
+    <a href="https://www.facebook.com/people/S-Team-Formations/61566949414638/" target="_blank" title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/steam_formations_officiel/" target="_blank" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.s-teamformations.fr/" target="_blank" title="Site Web">
+      <i class="fas fa-globe"></i>
+    </a>
+  </div>
+</div>
+
 
             <a href="Alice-Lantourne.vcf" download class="vcard-bubble" title="Ajouter le contact">
               <i class="fas fa-address-card"></i>
