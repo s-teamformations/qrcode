@@ -166,6 +166,59 @@
                       transform: scale(1.2);
                       filter: brightness(0.85);
                 }
+        .vcard-bubble {
+    position: absolute;
+    top: 145px;
+    right: calc(50% - 60px); /* ajusté en fonction de la largeur de l'image */
+    background: #fff;
+    color: #4a87e0;
+    border: 2px solid #4a87e0;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.vcard-bubble:hover {
+    background: #4a87e0;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+        .vcard-bubble {
+    position: absolute;
+    top: 145px;
+    right: calc(50% - 60px); /* ajusté pour être à droite de la photo */
+    background: #fff;
+    color: #4a87e0;
+    border: 2px solid #4a87e0;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.vcard-bubble:hover {
+    background: #4a87e0;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+
 
 
         
@@ -231,6 +284,10 @@
     <div class="card">
         <div class="curve-header"></div>
         <img class="profile-img" src="Alice-Lantourne.jpg" alt="Alice">
+        <a href="alice.vcf" download class="vcard-bubble" title="Télécharger le contact">
+    <i class="fas fa-address-card"></i>
+</a>
+
         <div class="card-body">
             <h5 class="card-title">Alice</h5>
             <div class="card-subtitle">Directrice générale - S-Team Formations</div>
