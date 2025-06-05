@@ -158,7 +158,6 @@
                     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
                     text-decoration: none;
                     z-index: 10001;
-                    pointer-events: auto;
                     transition: background 0.3s;
                     font-size: 1.5rem;
                     animation: slideInUp 0.8s ease-out;
@@ -243,7 +242,7 @@
             }
 
             @keyframes fadeOut {
-                to { opacity: 0; visibility: hidden }
+                to { opacity: 0;}
             }
         
  
@@ -285,6 +284,16 @@
             <a href="Alice-Lantourne.vcf" download class="vcard-bubble" title="Ajouter le contact">
               <i class="fas fa-address-card"></i>
             </a>
+
+            <script>
+  // Supprime le loader après l'animation
+  setTimeout(() => {
+    const loader = document.getElementById('loader');
+    if (loader) {
+      loader.remove();
+    }
+  }, 2000); // 1s de délai + 0.8s d'animation + un petit tampon
+</script>
 
 
 
