@@ -167,18 +167,8 @@
                 .vcard-bubble:hover {
                     background: #2c375b;
                 }
-        
-            @keyframes slideInUp {
-                from {
-                    transform: translateY(30px);
-                    opacity: 0;
-                        }
-                to {
-                    transform: translateY(0);
-                    opacity: 1;
-                    }
-            }
-        #loader {
+
+                #loader {
     position: fixed;
     top: 0;
     left: 0;
@@ -199,6 +189,17 @@
     animation: fadeIn 0.6s ease forwards;
     animation-delay: 0.4s;
 }
+            @keyframes slideInUp {
+                from {
+                    transform: translateY(30px);
+                    opacity: 0;
+                        }
+                to {
+                    transform: translateY(0);
+                    opacity: 1;
+                    }
+            }
+
 
 /* Animations */
 @keyframes fadeIn {
