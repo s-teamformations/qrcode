@@ -108,39 +108,39 @@
             color: #6c757d;
         }
 
-.social-box {
-    border: none;
-    padding: 1.5rem;
-    border-radius: 16px;
-    background: linear-gradient(135deg, #f8f9fb, #eef1f5);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    margin-top: 2rem;
-}
+        .social-box {
+            border: none;
+            padding: 1.5rem;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #f8f9fb, #eef1f5);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            margin-top: 2rem;
+        }
 
-.social-box h6 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #2c375b;
-    margin-bottom: 1rem;
-}
+        .social-box h6 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2c375b;
+            margin-bottom: 1rem;
+        }
 
-.social-icons-row {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-}
+        .social-icons-row {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
 
-.social-icons-row a {
-    font-size: 1.6rem;
-    color: #4a87e0;
-    transition: transform 0.2s ease, color 0.3s ease;
-}
+        .social-icons-row a {
+            font-size: 1.6rem;
+            color: #4a87e0;
+            transition: transform 0.2s ease, color 0.3s ease;
+        }
 
-.social-icons-row a:hover {
-    color: #2c375b;
-    transform: scale(1.2);
-}
+        .social-icons-row a:hover {
+            color: #2c375b;
+            transform: scale(1.2);
+        }
 
         
                 .vcard-bubble {
@@ -180,6 +180,18 @@
                     z-index: 10000;
                     animation: fadeOut 0.8s ease 2.5s forwards;
                 }
+        
+        .social-img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-img:hover {
+  transform: scale(1.2);
+  filter: brightness(0.85);
+}
+
 
         
                     /* Logo animé avec effet rebond */
@@ -258,15 +270,12 @@
 <div class="social-box">
   <h6>Suivez-nous sur les réseaux</h6>
   <div class="social-icons-row">
-    <a href="https://www.facebook.com/people/S-Team-Formations/61566949414638/" target="_blank" title="Facebook">
-      <i class="fab fa-facebook-f"></i>
-    </a>
-    <a href="https://www.instagram.com/steam_formations_officiel/" target="_blank" title="Instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://www.s-teamformations.fr/" target="_blank" title="Site Web">
-      <i class="fas fa-globe"></i>
-    </a>
+<a href="https://www.facebook.com/people/S-Team-Formations/61566949414638/" target="_blank" title="Facebook">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook" class="social-img">
+</a>
+<a href="https://www.instagram.com/steam_formations_officiel/" target="_blank" title="Instagram">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-img">
+</a>
   </div>
 </div>
 
