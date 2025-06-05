@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -160,6 +161,7 @@
                     z-index: 999;
                     transition: background 0.3s;
                     font-size: 1.5rem;
+                    animation: slideInUp 0.8s ease-out;
                 }
         
                 .vcard-bubble:hover {
@@ -177,9 +179,8 @@
                     align-items: center;
                     justify-content: center;
                     z-index: 10000;
-                    animation: fadeOut 0.8s ease 2.5s forwards;
+                    animation: fadeOut 0.8s ease 1.5s forwards;
                 }
-
         
                 .social-img {
                     width: 40px;
@@ -196,10 +197,10 @@
         
                     /* Logo animé avec effet rebond */
         
-                  .logo-loader {
+                .logo-loader {
                     width: 180px;
                     height: auto;
-                    animation: bounceIn 1.2s ease forwards;fadeOut 0.8s ease 2.5s forwards;
+                    animation: bounceIn 1.2s ease forwards;
                 }
 
                     /* Animation rebond */
@@ -225,17 +226,34 @@
 
         
                     /* Animations */
-
         
- 
+            @keyframes slideInUp {
+                from {
+                    transform: translateY(30px);
+                    opacity: 0;
+                        }
+                to {
+                    transform: translateY(0);
+                    opacity: 1;
+                    }
+            }
+
+            @keyframes fadeIn {
+                to { opacity: 1; }
+            }
+
+            @keyframes fadeOut {
+                to { opacity: 0; visibility: hidden; }
+            }
+        
     </style>
     
 </head>
 <body>
-      <!-- <div id="loader">
+     <div id="loader">
               <img src="logo_formation_V2.JPG" alt="Logo S-Team Formations" class="logo-loader">
-        </div>-->
-    
+        </div>
+     
     <div class="card">
         <div class="curve-header"></div>
         <img class="profile-img" src="Alice-Lantourne.jpg" alt="Alice">
