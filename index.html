@@ -291,5 +291,15 @@
             Powered by S-Team Formations
         </div>
 
+            <script>
+  // Supprimer le loader après son animation
+  setTimeout(() => {
+    const loader = document.getElementById('loader');
+    if (loader) {
+      loader.remove(); // Retire complètement le loader du DOM
+    }
+  }, 3300); // durée = fadeOut 0.8s + délai 2.5s = 3.3s
+</script>
+
 </body>
 </html>
