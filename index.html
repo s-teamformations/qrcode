@@ -144,25 +144,39 @@
                     position: fixed;
                     bottom: 20px;
                     right: 20px;
-                    background: #4a87e0;
+                    background: linear-gradient(45deg, #4a87e0, #2c375b);
                     color: white;
                     border-radius: 50%;
-                    width: 50px;
-                    height: 50px;
+                    width: 56px;
+                    height: 56px;
                     display: flex;
-                    justify-content: center;
                     align-items: center;
-                    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+                    justify-content: center;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
                     text-decoration: none;
-                    font-size: 1.4rem;
                     z-index: 999;
-                    transition: background 0.3s ease;
+                    transition: background 0.3s;
+                    font-size: 1.5rem;
+                    animation: slideInUp 0.8s ease-out;
+                }
+        
+                .vcard-bubble:hover {
+                    background: #2c375b;
+                }
+        
+            @keyframes slideInUp {
+                from {
+                    transform: translateY(30px);
+                    opacity: 0;
+                        }
+                to {
+                    transform: translateY(0);
+                    opacity: 1;
+                    }
             }
-
-.vcard-bubble:hover {
-    background: #2c375b;
-}
+        
     </style>
+    
 </head>
 <body>
     <div class="card">
@@ -189,9 +203,9 @@
             </div>
         </div>
 
-        <a href="Alice-Lantourne.vcf" download class="vcard-bubble" title="Ajouter le contact">
-            <i class="fas fa-address-card"></i>
-        </a>
+            <a href="Alice-Lantourne.vcf" download class="vcard-bubble" title="Ajouter le contact">
+              <i class="fas fa-address-card"></i>
+            </a>
 
         <div class="mx-auto bg-white">
             Powered by S-Team Formations
